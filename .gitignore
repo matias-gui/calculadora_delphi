@@ -1,0 +1,9 @@
+Win32/
+Win64/
+
+*.local
+*.res
+*.dcu
+*.exe
+*__history
+*__recovery
