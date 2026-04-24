@@ -87,6 +87,7 @@ object Form1: TForm1
     Height = 25
     Caption = '-'
     TabOrder = 4
+    OnClick = buttonSubtrairClick
   end
   object buttonMultiplicar: TButton
     Left = 168
