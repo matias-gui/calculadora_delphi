@@ -20,6 +20,7 @@ type
     buttonDividir: TButton;
     procedure buttonSomaClick(Sender: TObject);
     procedure buttonSubtrairClick(Sender: TObject);
+    procedure buttonMultiplicarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,6 +33,7 @@ var
 implementation
 
 {$R *.dfm}
+
 
 procedure TForm1.buttonSomaClick(Sender: TObject);
   var
@@ -56,4 +58,17 @@ begin
     textResultado.Text := IntToStr(resultado);
 end;
 
+procedure TForm1.buttonMultiplicarClick(Sender: TObject);
+  var
+    num1, num2, resultado : Integer;
+begin
+    num1 := StrToInt(textNum1.Text);
+    num2 := StrToInt(textNum2.Text);
+    resultado := num1 * num2;
+
+    textResultado.Text := IntToStr(resultado);
+
+end;
+
 end.
+
