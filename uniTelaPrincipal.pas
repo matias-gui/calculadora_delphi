@@ -21,6 +21,7 @@ type
     procedure buttonSomaClick(Sender: TObject);
     procedure buttonSubtrairClick(Sender: TObject);
     procedure buttonMultiplicarClick(Sender: TObject);
+    procedure buttonDividirClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -58,6 +59,7 @@ begin
     textResultado.Text := IntToStr(resultado);
 end;
 
+
 procedure TForm1.buttonMultiplicarClick(Sender: TObject);
   var
     num1, num2, resultado : Integer;
@@ -67,6 +69,17 @@ begin
     resultado := num1 * num2;
 
     textResultado.Text := IntToStr(resultado);
+
+end;
+procedure TForm1.buttonDividirClick(Sender: TObject);
+  var
+    num1, num2, resultado : Double;
+begin
+    num1 := StrToFloat(textNum1.Text);
+    num2 := StrToFloat(textNum2.Text);
+    resultado :=  num1 / num2 ;
+
+    textResultado.Text := FloatToStr(resultado)
 
 end;
 
