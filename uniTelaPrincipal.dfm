@@ -96,6 +96,7 @@ object Form1: TForm1
     Height = 25
     Caption = '*'
     TabOrder = 5
+    OnClick = buttonMultiplicarClick
   end
   object buttonDividir: TButton
     Left = 207
