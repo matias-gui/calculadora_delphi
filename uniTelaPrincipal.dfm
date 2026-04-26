@@ -105,5 +105,6 @@ object Form1: TForm1
     Height = 25
     Caption = '/'
     TabOrder = 6
+    OnClick = buttonDividirClick
   end
 end
